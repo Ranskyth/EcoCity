@@ -1,13 +1,18 @@
 package model
 
-type Endereco struct{
-	Rua string
-	Numero string
-	Cep string
-	Referencia string
-}
+import "gorm.io/gorm"
 
 type Descarte struct{
+	gorm.Model
 	Nome string
-	Endereco Endereco
+	Contato Contato
+	Descricao string
+	Horario string
+}
+
+type Contato struct{
+	gorm.Model
+	Endereco string
+	Telefone string
+	DescarteId uint
 }

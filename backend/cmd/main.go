@@ -1,16 +1,18 @@
 package main
 
 import (
+	"github.com/Ranskyth/EcoCity/internal/database"
+	"github.com/Ranskyth/EcoCity/internal/routes"
 	"github.com/labstack/echo/v4"
 )
 
 func main(){
+
+	database.Connect()
 	
 	app := echo.New();
 
-	app.GET("/", func (c echo.Context) error {
-		return c.JSON(200, map[string]string{"mensagem":"Hello"})
-	})
+	routes.Routes(app)
 
-	app.Logger.Fatal(app.Start(":3333"))
+	app.Logger.Fatal(app.Start(":8080"))
 }
