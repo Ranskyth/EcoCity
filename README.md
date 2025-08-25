@@ -1,3 +1,13 @@
 # EcoCity
 
-https://www.figma.com/design/wfoqzw30EKZGdUh4zNXVWj/Untitled?node-id=0-1&t=zrvESxPzwu3ZPFvL-1
+### Capturas de Tela
+<img src="./assets/cap1.png">
+<img src="./assets/cap2.png">
+<img src="./assets/cap3.png">
+
+
+## Stack utilizada
+
+**Front-end:** React
+
+**Back-end:** Echo, Go
